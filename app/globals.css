@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Scroll bar ke thumb ko style dena */
+::-webkit-scrollbar-thumb {
+    background-color: #121212;
+    border-radius: 5px;
+}
+
+/* Scroll bar track ka color */
+::-webkit-scrollbar-track {
+    background-color: #121212c2;
+}
+
+.bg-img {
+    background-image: url('../public/Arts.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
