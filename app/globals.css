@@ -24,22 +24,13 @@
     background-color: #121212c2;
 }
 
-.bg-img, .bg-img-2 {
+.bg-img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-}
-
-.bg-img {
-    background-image: url('../public/Arts.jpg');
+    background-image: url('../public/MDP.jpg');
     background-attachment: fixed;
 }
-
-.bg-img-2 {
-    background-image: url('../public/Inkfolio.jpg');
-}
-
 
 .tshadow {
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,

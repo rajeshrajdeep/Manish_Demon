@@ -12,7 +12,7 @@ function Navbar() {
       <div>
         <Logo />
       </div>
-      <div>
+      <div className='cursor-pointer'>
         <Bars isActive={isActive} setIsActive={setIsActive} />
       </div>
       <MenuPanel isActive={isActive} />
