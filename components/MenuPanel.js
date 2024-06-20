@@ -10,8 +10,8 @@ export default function MenuPanel({ isActive }) {
         <div className='border border-neutral-50'><a href="/"><h1 className='hover:text-black tshadow'>ABOUT</h1></a></div>
 
         <div className='md:col-span-2 border border-neutral-50'><a href="/"><h1 className='hover:text-black tshadow'>GET TATTOO</h1></a></div>
-        <div className='flex md:flex-row flex-col justify-center my-5 items-center gap-2'>
-          <input className='bg-transparent text-2xl rounded-lg border-b border-rose-500' type="email" name="email" id="email" placeholder='Your Email' />
+        <div className='flex md:flex-row flex-col justify-center my-5 items-center gap-1'>
+          <input className='bg-transparent text-xl md:w-1/2 w-44 rounded-lg border-b border-rose-500' type="email" name="email" id="email" placeholder='Your Email' />
           <button className='p-1 text-lg border rounded-lg border-rose-500' type="submit">SUBSCRIBE</button>
         </div>
         <div className='grid text-sm md:text-2xl my-5 grid-cols-2'>
