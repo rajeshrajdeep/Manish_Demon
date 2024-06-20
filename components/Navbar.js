@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 import Bars from './ui/Bars';
 import Logo from './ui/Logo';
@@ -15,7 +15,7 @@ function Navbar() {
       <div className='cursor-pointer'>
         <Bars isActive={isActive} setIsActive={setIsActive} />
       </div>
-      <MenuPanel isActive={isActive} />
+      <MenuPanel isActive={isActive} setIsActive={setIsActive} />
     </nav>
   );
 }

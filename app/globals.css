@@ -34,5 +34,27 @@
 
 .tshadow {
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+/* Add transition for the menu panel */
+#menuPanel {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+#menuPanel.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Optional: Add some animation for menu links */
+#menuPanel a {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#menuPanel a:hover {
+    color: #ff6347; /* Tomato color */
+    transform: scale(1.05);
 }
