@@ -2,27 +2,28 @@ import React from 'react';
 
 export default function MenuPanel({ isActive }) {
   return (
-    <section className={`transition-all bg-[#121212] border border-neutral-950 -z-10 md:top-5 top-16 md:container md:mx-auto fixed md:py-20 py-14 md:px-5 px-10 duration-300 ${isActive ? 'block' : 'hidden'}`}>
-      <div className='grid border border-neutral-50 md:text-9xl text-7xl font-extrabold text-center p-1 md:grid-cols-2 grid-cols-1'>
-        <div className=' border border-neutral-50'><a className='hover:text-black tracking-wider tshadow' href="/">ABOUT</a></div>
-        <div className=' border border-neutral-50'><a className='hover:text-black tracking-wider tshadow' href="/">NEWS</a></div>
-        <div className=' border border-neutral-50'><a className='hover:text-black tracking-wider tshadow' href="/">ARTISTS</a></div>
-        <div className=' border border-neutral-50'><a className='hover:text-black tracking-wider tshadow' href="/">WORKS</a></div>
-        <div className='col-span-2 border border-neutral-50'><a className='hover:text-black tracking-wider tshadow' href="/">GET TATTOO</a></div>
-        <div className=' border flex justify-center items-center border-neutral-50'>
-          <form className='text-2xl p-2' action="" method="post">
-            <input className='bg-transparent border-b m-2 md:pr-10' type="email" name="email" id="email" placeholder='Your Email' />
-            <button className='border rounded-lg px-2'>Subscribe</button>
-          </form>
-        </div>
-        <div className=' flex justify-center items-center gap-4 border border-neutral-50'>
-          <a className='hover:text-black text-2xl ' href="/">INSTAGRAM</a>
-          <a className='hover:text-black text-2xl ' href="/">FACEBOOK</a>
-          <a className='hover:text-black text-2xl ' href="/">X</a>
-          <a className='hover:text-black text-2xl ' href="/">YOUTUBE</a>
-        </div>
+    <section className={`transition-all bg-[#121212] -z-10 absolute md:py-20 py-10 top-16 w-full left-0 md:top-5 text-white duration-300 ${isActive ? 'block' : 'hidden'}`}>
+      <div className='grid border border-neutral-50 md:grid-cols-2 text-center md:tracking-normal tracking-widest md:text-9xl'>
+        <div className='border border-neutral-50'><a href="/"><h1 className='md:hover:text-black tshadow'>WORKS</h1></a></div>
+        <div><a href="/"><h1 className='hover:text-black tshadow'>ARTISTS</h1></a></div>
+        <div><a href="/"><h1 className='hover:text-black tshadow'>NEWS</h1></a></div>
+        <div className='border border-neutral-50'><a href="/"><h1 className='hover:text-black tshadow'>ABOUT</h1></a></div>
 
-
+        <div className='md:col-span-2 border border-neutral-50'><a href="/"><h1 className='hover:text-black tshadow'>GET TATTOO</h1></a></div>
+        <div className='flex md:flex-row flex-col justify-center my-5 items-center gap-2'>
+          <input className='bg-transparent text-2xl rounded-lg border-b border-rose-500' type="email" name="email" id="email" placeholder='Your Email' />
+          <button className='p-1 text-lg border rounded-lg border-rose-500' type="submit">SUBSCRIBE</button>
+        </div>
+        <div className='grid text-sm md:text-2xl my-5 grid-cols-2'>
+          <div className='grid md:grid-cols-2'>
+            <div><a className='hover:shadow-rose-400 shadow-md' target='_blank' href="https://www.instagram.com/manish_demon/">INSTAGRAM</a></div>
+            <div><a className='hover:shadow-blue-400 shadow-md' href="https://www.facebook.com/manish.rajdeep.9">FACEBOOK</a></div>
+          </div>
+          <div className='grid md:grid-cols-2'>
+            <div><a className='hover:shadow-blue-600 shadow-md' href="https://x.com/manishdemon3">X.COM</a></div>
+            <div><a className='hover:shadow-red-600 shadow-md' href="/">YOUTUBE</a></div>
+          </div>
+        </div>
       </div>
     </section>
   );
